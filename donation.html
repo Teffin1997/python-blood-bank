@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <title>donation camp</title>
+    <link rel="stylesheet" href="../static/donation.css">
+
+</head>
+<header>
+  <nav>
+     <ul>
+         
+         <li><a href="home">Home</a></li>
+         <li><a href="home">Back</a></li>
+     </ul>
+  </nav>
+ </header>
+ <body>
+    <div class="content">
+      <div class="head">
+        <h1>Camp schedule...</h1>
+      </div>
+      <div class="page">
+        <div class="search">
+          <form action="/campsearch" method="post">
+            <label for="district">Enter District:</label>
+            <select id="district" name="districts">
+              <option value="district">Select District</option>
+              <option value="trivandrum">Trivandrum</option>
+              <option value="kollam">Kollam</option>
+              <option value="pathanamthitta">Pathanamthitta</option>
+              <option value="alapuzha">Alapuzha</option>
+              <option value="kottayam">Kottayam</option>
+              <option value="idukki">Idukki</option>
+              <option value="ernakulam">Ernakulam</option>
+              <option value="thrissur">Thrissur</option>
+              <option value="palakkad">Palakkad</option>
+              <option value="malappuram">Malappuram</option>
+              <option value="kozhikode">Kozhikode</option>
+              <option value="wayanad">Wayanad</option>
+              <option value="kannur">Kannur</option>
+              <option value="kasaragod">Kasaragod</option>
+            </select>
+            <input type="submit" name="Search" value="Search">
+
+          
+          </form>
+        </div>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>DISTRICT</th>
+                    <th>ORGANIZATION</th>
+                    <th>PLACE</th>
+                    <th>PHONE NUMBER</th>
+                    <th>EMAIL</th>
+                    <th>BLOOD BANK</th>
+                    <th>DATE</th>
+                    <th>STARTING TIME</th>
+                    <th>ENDING TIME</th>
+                   
+                </tr>
+            </thead>
+            {%for row in sqldata%}
+             <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+                <td>{{row[6]}}</td>
+                <td>{{row[7]}}</td>
+                <td>{{row[8]}}</td>
+             </tr>
+            {%endfor%}
+        </table>
+        
+        
+      
+       
+      </div>
+    </div>
+    <footer id="footer">
+          <nav class="privacy">
+              <ul>
+                <li><a href="condition">Terms and conditions</a></li>
+                <li><a href="Policy">Accessibility Statement</a></li>
+                <li><a href="date">Last Date Modified</a></li>
+              </ul>
+          </nav>
+    </footer>
+ </html>

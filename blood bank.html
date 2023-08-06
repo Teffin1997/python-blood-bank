@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <title>Blood bank registration</title>
+    <link rel="stylesheet" href="../static/camp.css">
+
+</head>
+<header>
+  <nav>
+     <ul>
+         
+         <li><a href="home">Home</a></li>
+         <li><a href="home">Back</a></li>
+     </ul>
+  </nav>
+ </header>
+ <body>
+    <div class="content">
+      <div class="head">
+        <h1>Blood Bank Registration...</h1>
+      </div>
+      <div class="page">
+        <div class="create">
+          <h4>Blood Bank Details</h4>
+         <form action="/bank" method="post">
+          <div class="details">
+            <label for="Category">Category:</label>
+            <input type="text" name="category">
+            <label for="Name">Blood Bank Name:</label>
+            <input type="text" name="name">
+            <label for="Hospital">Parent Hospital Name:</label>
+            <input type="text" name="hospital">
+            <label for="Contact">Contact Number:</label>
+            <input type="number" name="contact">
+            <label for="Email">Email:</label>
+            <input type="text" name="email">
+            <label for="Licence">Licence Number:</label>
+            <input type="text" name="licence">
+            
+            
+           
+          </div>
+          <div class="details">
+           
+            <label for="Address1">Address1:</label>
+            <input type="text" name="address1">
+            <label for="Address2">Address2</label>
+            <input type="text" name="address2">
+            <label for="Pincode">Pincode:</label>
+            <input type="number" name="pincode">
+            <label for="City">City Name:</label>
+            <input type="text" name="city">
+            <label for="District">District:</label>
+            <select id="district" name="district">
+              <option value="district">Select District</option>
+              <option value="trivandrum">Trivandrum</option>
+              <option value="kollam">Kollam</option>
+              <option value="pathanamthitta">Pathanamthitta</option>
+              <option value="alapuzha">Alapuzha</option>
+              <option value="kottayam">Kottayam</option>
+              <option value="idukki">Idukki</option>
+              <option value="ernakulam">Ernakulam</option>
+              <option value="thrissur">Thrissur</option>
+              <option value="palakkad">Palakkad</option>
+              <option value="malappuram">Malappuram</option>
+              <option value="kozhikode">Kozhikode</option>
+              <option value="wayanad">Wayanad</option>
+              <option value="kannur">Kannur</option>
+              <option value="kasaragod">Kasaragod</option>
+  
+            </select>
+            <label for="State">State:</label>
+            <select class="state" id="state" name="state">
+              <option value="state">Kerala</option>
+            </select>
+           
+          </div>
+          <div class="details">
+            <label for="Website">Website:</label>
+            <input type="text" name="website">
+            <label for="Bed">No Of Bed Hospital:</label>
+            <input type="number"  name="bed">
+            <label for="user">User Name:</label>
+            <input type="text" name="user">
+            <label for="password1">Enter Password:</label>
+            <input type="text" name="password1">
+            <label for="password2">Re Enter Password:</label>
+            <input type="text" name="password2">
+            <label for="Remarks">Remarks:</label>
+            <input type="text" name="remarks">
+            
+             
+            
+          </div>
+          <input type="submit" name="search" value="submit">
+          
+         </form>
+      
+        
+      
+      </div>
+    </div>
+    <div class="footer">
+          <nav class="privacy">
+              <ul>
+                <li><a href="condition">Terms and conditions</a></li>
+                <li><a href="Policy">Accessibility Statement</a></li>
+                <li><a href="date">Last Date Modified</a></li>
+              </ul>
+          </nav>
+    </div>
+
+</body>
+</html>

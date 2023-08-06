@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <title>donation camp registration</title>
+    <link rel="stylesheet" href="../static/camp.css">
+
+</head>
+<header>
+  <nav>
+     <ul>
+         
+         <li><a href="home">Home</a></li>
+         <li><a href="home">Back</a></li>
+     </ul>
+  </nav>
+ </header>
+
+<body>
+    <div class="content">
+      <div class="head">
+        <h1>Blood Donation Camp Registration...</h1>
+      </div>
+      <div class="page">
+        <div class="create">
+          <h4>Enter Camp Details</h4>
+         <form action="/register" method="post">
+          <div class="details">
+            <label for="organization Type">Organization Type:</label>
+            <input type="text" name="type">
+            <label for="Name">Organization Name:</label>
+            <input type="text" name="name">
+            <label for="organizer Name">Organizer Name:</label>
+            <input type="text" name="orgname">
+            <label for="Mobile">Contact Number</label>
+            <input type="number" name="mobile">
+            <label for="Email">Email:</label>
+            <input type="text" name="email">
+            <label for="Co name">Co-Organizer Name:</label>
+            <input type="text" name="co name">
+            
+            
+           
+          </div>
+          <div class="details">
+           
+            <label for="Co mobile">Organizer Contact Number:</label>
+            <input type="number" name="co mobile">
+            <label for="Camp name">Camp Name:</label>
+            <input type="text" name="camp name">
+            <label for="Address">Camp Address:</label>
+            <input type="text" name="address">
+            <label for="City">City Name:</label>
+            <input type="text" name="city">
+            <label for="district">Enter District:</label>
+            <select id="district" name="districts">
+              <option value="district">Select District</option>
+              <option value="trivandrum">Trivandrum</option>
+              <option value="kollam">Kollam</option>
+              <option value="pathanamthitta">Pathanamthitta</option>
+              <option value="alapuzha">Alapuzha</option>
+              <option value="kottayam">Kottayam</option>
+              <option value="idukki">Idukki</option>
+              <option value="ernakulam">Ernakulam</option>
+              <option value="thrissur">Thrissur</option>
+              <option value="palakkad">Palakkad</option>
+              <option value="malappuram">Malappuram</option>
+              <option value="kozhikode">Kozhikode</option>
+              <option value="wayanad">Wayanad</option>
+              <option value="kannur">Kannur</option>
+              <option value="kasaragod">Kasaragod</option>
+  
+            </select>
+            <label for="State">State:</label>
+            <select class="state" id="state" name="state">
+              <option value="state">Kerala</option>
+            </select>
+           
+          </div>
+          <div class="details">
+            <label for="Blood bank">Blood Bank:</label>
+            <input type="text" name="blood bank">
+            <label for="Time">camp Sart time:</label>
+            <input type="time"  name="time">
+            <label for="Time">camp End time:</label>
+            <input type="time"  name="time2">
+            <label for="Date">Camp Propose Date:</label>
+            <input type="date" name="date">
+            <label for="participants">Estimated Participants:</label>
+            <input type="number" name="participants">
+            <label for="Remarks">Remarks:</label>
+            <input type="text" name="remarks">
+            
+             
+            
+          </div>
+      
+          <input type="submit" name="search" value="submit">
+    
+          
+         </form>
+         {{msgdata}}
+         
+        
+        
+      
+      </div>
+    </div>
+    <div class="footer">
+          <nav class="privacy">
+              <ul>
+                <li><a href="condition">Terms and conditions</a></li>
+                <li><a href="Policy">Accessibility Statement</a></li>
+                <li><a href="date">Last Date Modified</a></li>
+              </ul>
+          </nav>
+    </div>
+
+</body>
+</html>
